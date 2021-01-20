@@ -30,6 +30,14 @@ h1{
     margin: 0;
 }
 
+main{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+
+
 
 /* -------------------------------------------------------------------------- */
 /*                                Helper Class                                */
@@ -61,7 +69,7 @@ h1{
 .header{
     background-color: #1e1f26;
     width: 100%;
-    z-index: 2;
+    z-index: 11;
 }
 
 nav{
@@ -117,6 +125,8 @@ nav{
 
 
 #button-follow:hover{
+    background-color: #47cf73;
+    color: #1e1f26;
     filter: brightness(85%);
     }
 /* ---------------------------- Left Side Header ---------------------------- */
@@ -177,8 +187,6 @@ nav{
     display: none;
     width: 146px;
 } 
-
-
 
 #hearticon{
     margin: auto;
@@ -267,4 +275,59 @@ nav{
 
 }
 
+
+/* -------------------------------------------------------------------------- */
+/*                                    Body                                    */
+/* -------------------------------------------------------------------------- */
+
+.layer{
+    background-color: #094c8a;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+
+.main-container{
+    position: relative;
+    padding: 50px 600px;
+}
+
+
+#title, #description{
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+
+#title{
+    font-weight: 400;
+    font-family: popp;
+}
+#description{
+    font-weight: 300;
+    font-size: 1.1875rem;
+}
+
+.form-container{
+    position: relative;
+    color: white;
+    background-color: #1e1f26;
+    border-radius: 5px;
+    margin: auto;
+}
+
+#survey-form{
+    max-width: 720px;
+    padding: 36px 30px;
+}
+
+input, #dropdown, #favourite{
+    width: 100%;
+    margin-top: 7px;
+    margin-bottom: 14px;
+}
 
