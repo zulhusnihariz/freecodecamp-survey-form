@@ -1,0 +1,270 @@
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before,*::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Lato";
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                Helper Class                                */
+/* -------------------------------------------------------------------------- */
+
+.flex{
+    display: flex;
+}
+
+.jc-sb{
+    justify-content: space-between;
+}
+
+.jc-c{
+    justify-content: center;
+}
+
+.ai-c{
+    align-items: center;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   Header                                   */
+/* -------------------------------------------------------------------------- */
+
+
+
+.header{
+    background-color: #1e1f26;
+    width: 100%;
+    z-index: 2;
+}
+
+nav{
+    padding: 10px 8px;
+}
+
+/* ---------------------------- Right Side Header --------------------------- */
+
+.logo-img{
+    height: 1.5625rem;
+    width: 1.5625rem;
+    margin-right: 8px;
+}
+
+.logo{
+    display: inline-block;
+}
+
+.logo-div{
+    width: 100%;
+}
+
+.logo h1 a {
+    font-size: 1rem;
+}
+
+#link-fcc{
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    color:  #5a5f73;
+}
+
+#link-fcc:hover{
+    color:  white;
+}
+
+.fcc-follow{
+    font-size: 0.6875rem;
+}
+
+#button-follow{
+    background-color: #5a5f73;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-size: 0.5675rem;
+    font-weight: 700;
+    height: 16px;
+    width: 50px;
+    padding: 0;
+}
+
+
+#button-follow:hover{
+    filter: brightness(85%);
+    }
+/* ---------------------------- Left Side Header ---------------------------- */
+
+.hamburger{
+    background-color: #444857;
+    border-radius: 4px;
+    margin-right: 8px;
+    padding-top: 8px;
+    width: 36px;
+    height: 31px;
+
+}
+
+.hamburger span{
+    display: block;
+    width: 20px;
+    margin: auto;
+    height: 3px;
+    background-color: white;
+    
+}
+
+.hamburger span:not(:last-child){
+    margin-bottom: 3px;
+}
+
+.nav-buttons button{
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    margin-right: 8px;
+    padding: 0;
+    height: 31px;
+}
+
+.nav-buttons button:hover{
+    filter: brightness(85%);
+}
+
+
+#heart{
+    border: 3px solid #444857;
+    background-color: #1e1f26;
+    display: none;
+    width: 56px
+}
+
+#heart:hover{
+    background-color: #444857;
+
+}
+
+#changeView{
+    color: white;
+    background-color: #444857;
+    align-items: center;
+    display: none;
+    width: 146px;
+} 
+
+
+
+#hearticon{
+    margin: auto;
+    height: 1.5625rem;
+    width: 1.5625rem;
+}
+
+#eyeicon{
+    height: 1.5625rem;
+    width: 1.5625rem;
+    padding-right: 5px;
+    margin-left: 15px;
+    align-items: center;
+}
+
+
+#signup {
+    background-color: #47cf73;
+    width: 56px;
+}
+
+#login{
+    color: white;
+    background-color: #444857;
+    width: 46px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Media Query                                */
+/* -------------------------------------------------------------------------- */
+@media (min-width: 47.625em){
+
+/* ---------------------------- Right Side Header --------------------------- */
+
+    .logo-img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .logo h1 a {
+        font-size: 1.2rem;
+    }
+
+
+    .fcc-follow{
+        margin-right: 10px;
+        font-size: 0.785rem;
+    }
+    
+   
+    #button-follow{
+        background-color: #5a5f73;
+        border: none;
+        border-radius: 2px;
+        color: white;
+        font-size: 0.5675rem;
+        font-weight: 700;
+        height: 16px;
+        width: 58px;
+        padding: 0;
+    }
+
+/* ---------------------------- Left Side Header ---------------------------- */
+
+    .nav-buttons button{
+        height: 44px;
+    }
+
+    #heart, #changeView{
+        display: flex;
+    }
+
+
+    #signup {
+        width: 88px;
+    }
+    
+    #login{
+
+        width: 77px;
+    } 
+
+    .hamburger{
+        display: none;
+    }
+
+}
+
+
