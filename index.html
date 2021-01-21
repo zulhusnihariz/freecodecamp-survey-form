@@ -14,7 +14,6 @@
 
 <style>
     body{
-
         background-image: url("img/background_image.jpg");
         background-position: center center;
         background-attachment: fixed;
@@ -22,7 +21,6 @@
         background-repeat: no-repeat;
     }
 </style>
-
     <body>
         <header class = "header">
             <nav class = "flex jc-sb ai-c">
@@ -37,14 +35,12 @@
                     </div>
                 </div>
 
-
                 <div class = "nav-buttons flex ai-c">
                     <a class = "hamburger" href="">
                         <span></span>
                         <span></span>
                         <span></span>
                     </a>
-
                     <button id = "heart"><img id ="hearticon" src="img/heart.svg" alt="heart icon"></button>
                     <button id = "changeView" ><img id ="eyeicon" src="img/visibility.svg">Change View</button>
 
@@ -56,18 +52,17 @@
 
         <main>
             <div class = "layer"></div>
-            <div class = "main-container">
-                <h1 id = "title">freeCodeCamp Survey Form</h1>
-                    
-                <p id = "description"> Thank you for taking the time to help us improve the platform</p>
-            
+                <div class = "title-desc">
+                    <h1 id = "title">freeCodeCamp Survey Form</h1>
+                        
+                    <p id = "description"> Thank you for taking the time to help us improve the platform</p>
+                </div>
 
-            <section class = "form-container">
                 <form id = "survey-form" action="">
                     <!-- Name -->
                     <label id = "name-label"for="name">Name</label>
                     <br>
-                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
                     <br>
                     <!-- Email -->
                     <label id = "email-label" for="email">Email</label>
@@ -94,7 +89,7 @@
                     <!-- Recommend freeCodeCamp -->
                     <label for="recommend">Would you recommend freeCodeCamp to a friend?</label>
                     <br>
-                    <input type="radio" name="recommend" value="Definitely">
+                    <input id = "recommend" type="radio" name="recommend" value="Definitely">
                     <label for="">Definitely</label><br>
                     <input type="radio" name="recommend" value="Maybe">
                     <label for="">Maybe</label><br>
@@ -115,7 +110,7 @@
                     <!-- Checkbox -->
                     <label for="improvement">What would you like to see improved? (Check all that apply)</label>
                     <br>
-                    <input type="checkbox" name="improve1" value ="frontEnd">
+                    <input id = "improvement" type="checkbox" name="improve1" value ="frontEnd">
                     <label for="improve1">Front-end Projects</label><br>
                     <input type="checkbox" name="improve2" value ="backEnd">
                     <label for="improve2">Back-end Projects</label><br>
@@ -141,18 +136,12 @@
                     <!-- Comments -->
                     <label for="comments">Any comments or suggestions?</label>
                     <br>
-                    <textarea name="textarea" id="textBox" cols="30" rows="10"></textarea>
+                    <textarea name="textarea" id="textarea" cols="30" rows="30"></textarea>
                     <br>
                     <!-- Submit button -->
                     <button id = "submit">Submit</button>
-
-
-                </div>
-
                 </form>
-            </section>
-        
-
-        </main>
+            </main>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
 </html>
